@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '15'
+      - name: Print Job ID
+        run: echo ${{ GITHUB_JOB }}
 
       # Runs a single command using the runners shell
       - name: Run Node file
